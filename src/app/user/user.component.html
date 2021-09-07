@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row row-cols-1">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">User</h5>{{ (user$ | async)?.id }}
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>{{ (user$ | async)?.id }}
+            <p class="card-text">ID:{{user.id}} : 
+            Name:{{user.fname}} {{user.lname}}</p>
+            <button class="btn btn-primary" (click)="goBack()">go back</button>
+           </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,21 @@
+<h3 style='text-align:center'>Dashboard</h3>
+<div class="container">
+  <div class="row row-cols-3">
+    <div class="col" *ngFor='let user of users'>
+      <div class="card" style="width: 18rem; background-color:#eee;">
+        <div class="card-body">
+          <h5 class="card-title">{{user.fname}}</h5>
+          <p class="card-text">{{user.id}} {{user.fname}} {{user.lname}}</p>
+          <p class="card-link">{{user.email}}</p>
+        </div>
+        <a routerLink='/user/{{user.id}}' style="text-decoration:none">
+          <div class="card-body">
+            <h5 class="card-title">{{user.fname}}</h5>
+            <p class="card-text">{{user.id}} {{user.fname}} {{user.lname}}</p>
+            <p class="card-link">{{user.email}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
